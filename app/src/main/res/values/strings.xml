@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">math_game2</string>
+    <string name="hint_number1">Enter Number 1</string>
+    <string name="hint_number2">Enter Number 2</string>
+    <string name="hint_number3">Enter Number 3</string>
+    <string name="hint_number4">Enter Number 4</string>
+    <string name="result_1">Result 1</string>
+    <string name="result_2">Result 2</string>
+    <string name="result_3">Result 3</string>
+    <string name="result_4">Result 4</string>
+    <string name="operator">Operator</string>
+    <string name="generate">Generate</string>
+    <string name="exit">Exit</string>
+    <string name="calculate">Calculate</string>
+</resources>

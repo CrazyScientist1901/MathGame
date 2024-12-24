@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@color/peach">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/peach"
+        android:stretchColumns="0, 1, 2">  <!-- Stretch all columns equally -->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/table_border">
+
+            <EditText
+                android:id="@+id/number1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:hint="@string/hint_number1"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:padding="10sp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/number2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:hint="@string/hint_number2"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:padding="10sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/result1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/result_1"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/table_border">
+
+            <EditText
+                android:id="@+id/number3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:hint="@string/hint_number3"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:padding="10sp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/number4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:hint="@string/hint_number4"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:padding="10sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/result2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/result_2"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/table_border">
+
+            <TextView
+                android:id="@+id/result3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/result_3"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/result4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/result_4"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/operator"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/operator"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/button_generate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/generate"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/button_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exit" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="322dp"
+        android:layout_height="106dp"
+        android:layout_above="@+id/tableLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="136dp"
+        android:textAlignment="center"
+        android:text="Math Puzzle"
+        android:textSize="55sp"
+        android:fontFamily="@font/jersey"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tableLayout"
+        android:layout_margin="16dp"
+        android:text="•Enter numbers in the 4 empty cells and click on 'Generate'.\n•Once the operator is generated, click on 'Calculate' to get the desired puzzle."
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="8dp"
+        android:padding="8dp"
+        android:gravity="start" /> <!-- Ensure the content aligns left -->
+
+
+
+
+</RelativeLayout>
